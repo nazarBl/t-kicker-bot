@@ -8,5 +8,5 @@ export interface UserRecord {
 
 export interface UserParams {
     username?: string,
-    userId: number
+    userId: number,
 }

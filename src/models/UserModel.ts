@@ -9,7 +9,7 @@ export class UserModel {
 
     get data() { return this._data }
 
-    get userName() { return this._data.username }
+    get username() { return this._data.username }
 
     get userId() { return this._data.userId }
 }

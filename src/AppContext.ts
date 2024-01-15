@@ -5,8 +5,8 @@ if (process.env.ENVFILE) {
 }
 
 export class AppContext {
-    readonly token: string
-    readonly mongoURL: string
+    readonly token: string;
+    readonly mongoURL: string;
 
     constructor() {
         this.token = this.checkEnvVariable("TK_TOKEN");
@@ -14,13 +14,13 @@ export class AppContext {
     }
 
     checkEnvVariable(name: string): string {
-        const value = process.env[name]
+        const value = process.env[name];
         if (!value) {
-            throw new Error(`${name} was not provided`)
+            throw new Error(`${name} was not provided`);
         }
-        console.log(`${name}: ${value}`)
+        console.log(`${name}: ${value}`);
 
-        return value
+        return value;
     }
 }
 

@@ -2,33 +2,29 @@ import {MongoClient, Db, Collection} from "mongodb";
 import {UserRecord} from "../interfaces/UserRecord";
 import {AppContext} from "../AppContext";
 
-
 export class AppDB {
 
-    private client: MongoClient
-    private db: Db
-    private readonly _userCollection: Collection<UserRecord>
+    private client: MongoClient;
+    private db: Db;
+    private readonly _userCollection: Collection<UserRecord>;
 
     constructor(private readonly context: AppContext)
     {
-        this.client = new MongoClient(this.context.mongoURL)
-        this.db = this.client.db()
-        this._userCollection = this.db.collection("users")
-
+        this.client = new MongoClient(this.context.mongoURL);
+        this.db = this.client.db();
+        this._userCollection = this.db.collection("users");
     }
 
-    get userCollection() {
-        return this._userCollection
-    }
+    get userCollection() { return this._userCollection }
 
     async initDb()
     {
         try {
-            await this.client.connect()
-            console.log('Connected to DB')
+            await this.client.connect();
+            console.log('Connected to DB');
         } catch (e) {
-            console.error('Failed connect to mongoDB')
-            console.error(e as Error)
+            console.error('Failed connect to mongoDB');
+            console.error(e as Error);
         }
     }
 
