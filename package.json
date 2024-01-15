@@ -1,0 +1,31 @@
+{
+  "name": "examples-ts",
+  "version": "1.0.0",
+  "description": "Typescript common examples",
+  "main": "./src/main.ts",
+  "scripts": {
+    "start": "env ENVFILE=.env node -r ts-node/register/transpile-only ./src/main.ts "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wecan-university/examples-ts.git"
+  },
+  "keywords": [],
+  "author": "canab",
+  "license": "",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/wecan-university/examples-ts/issues"
+  },
+  "homepage": "https://github.com/wecan-university/examples-ts#readme",
+  "dependencies": {
+    "@telegraf/types": "^6.9.1",
+    "dotenv": "^16.3.1",
+    "mongodb": "^6.3.0",
+    "punycode": "^2.3.1",
+    "telegraf": "^4.15.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  }
+}

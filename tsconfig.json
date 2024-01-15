@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // modules
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    // strict
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    // "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+    // decorators
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // compilation
+    "noEmit": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@src/*": ["./src/*.ts"],
+      "@test": ["./test"],
+    }
+  },
+  "ts-node": {
+    "emit": false,
+    "transpileOnly": true,
+//    "require": ["tsconfig-paths/register"],
+    "pretty": true,
+  },
+  "exclude": [
+  ]
+}
