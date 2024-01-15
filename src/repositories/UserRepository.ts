@@ -1,5 +1,5 @@
-import {AppDB} from "@src/database/AppDB";
-import {UserModel} from "@src/models/UserModel";
+import {AppDB} from "../database/AppDB";
+import {UserModel} from "../models/UserModel";
 
 export class UserRepository
 {

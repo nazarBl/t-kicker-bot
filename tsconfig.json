@@ -25,7 +25,6 @@
     "incremental": true,
     "skipLibCheck": true,
     "paths": {
-      "@src/*": ["./src/*.ts"],
       "@test": ["./test"],
     }
   },

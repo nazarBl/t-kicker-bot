@@ -1,7 +1,7 @@
-import {UserRecord} from "@src/interfaces/UserRecord";
+import {UserRecord} from "../interfaces/UserRecord";
 
 export class UserModel {
-    private readonly _data: UserRecord
+    private readonly _data: UserRecord;
 
     constructor (data: UserRecord)  {
         this._data = { ...data }

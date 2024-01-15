@@ -1,6 +1,7 @@
 import {MongoClient, Db, Collection} from "mongodb";
-import {AppContext} from "@src/AppContext";
-import {UserRecord} from "@src/interfaces/UserRecord";
+import {UserRecord} from "../interfaces/UserRecord";
+import {AppContext} from "../AppContext";
+
 
 export class AppDB {
 
@@ -16,7 +17,7 @@ export class AppDB {
 
     }
 
-    get userCollection () {
+    get userCollection() {
         return this._userCollection
     }
 
